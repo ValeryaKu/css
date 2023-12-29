@@ -1,0 +1,353 @@
+/**
+ * Базовые стили для всего сайта
+ */
+body {
+	display: flex;
+	background-color:#FFFACD;
+	color: #000;
+	font-size:16px ;
+}
+
+
+/**
+ * Другие стили
+ */
+.navbar{ /*создание меню*/
+	width: 100%; /*ширина*/
+	height: 70px; /*высота*/
+	box-shadow: 0 4px 10px rgba(0, 0, 0, .2); /*тень*/
+}
+
+
+.navbar .container{ /*расположение*/
+	height: inherit;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar-menu {
+	list-style-type: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+.navbar-menu li {
+	display: inline-block;
+}
+
+.navbar-menu li a {
+	display: inline-block;
+	color: #000;
+	font-size: 18px;
+	opacity: 0.7; /* прозрачность*/
+	text-decoration: none; /* убрать подчеркивание*/
+	padding: 15px; /* расстояние между навгацией*/
+}
+
+.navbar-menu li a:hover { /*цвет ссылки меню*/
+	opacity: 1; /*прозрачность*/
+}
+
+.navbar-wrap {
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.callback { /*ОБРАТНЫЙ ЗВОНОК*/
+	margin-left: 30px;
+	padding: 15px 30px;
+	background-color: coral; 
+	border-radius: 100px; /*фигура*/
+	text-decoration: none;
+	color: #fff;
+}
+
+.callback:hover { 
+	transform: scale(1.04); /*увеличение обратной связи*/
+	color: #fff;
+}
+
+.navbar-brand{ /*логотип*/
+	font-weight: 700;
+	font-size: 26px;
+	text-decoration: none;
+	color: #000;
+}
+
+.navbar-brand:hover{ 
+	color: coral; /*Цвет ИЗМЕНИТЬ*/
+}
+
+.new{
+	position:absolute; 
+	top:70px;
+}
+
+.arr1{
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+/*регистрация*/
+
+.action_page{
+	input[type=text], input[type=password] ;
+  width: 100%;
+  padding: 25px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  margin: 0 auto;
+{
+
+
+}
+.input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Установите стиль для всех кнопок */
+
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+/* Установите стиль для всех кнопок */
+
+.button:hover {
+  opacity:1;
+}
+
+
+/* Дополнительные стили для кнопки "Отмена" */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Поплавок отмена и кнопки регистрации и добавить равную ширину */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Добавить отступы к элементам контейнера */
+.form-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+/* Очистить поплавки */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Измените стили для кнопки отмены и кнопки регистрации на дополнительных маленьких экранах */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+}
+/*регистрация*/
+
+/*оформление главной страницы*/
+ .section{
+ 	c
+ }
+
+.section_header{
+	padding: 5%;
+	width: 100%;
+	max-width: 950px;
+	margin: 0 aut 40px;
+	text-align: center;
+}
+.section_suptitle{
+	color: #f5821f;
+}
+
+/*картинки на гл стр*/
+.foto{
+	display: flex;
+	justify-content: space-between;
+}
+
+.item_img{
+	width: 40%;
+	text-align: center;
+	padding: 20px 0;
+
+}
+
+/*оформление о нас*/
+
+.section_2{
+	padding: 80px 0;
+}
+
+.section_header2{
+	width: 100%;
+	max-width: 950px;
+	margin: 0 aut 40px;
+	text-align: center;
+}
+.section_text3{
+	color: #000;
+	padding: 60px ;
+}
+
+.silka{
+	list-style-type: none;
+}
+
+.silka li a{
+	font-size:30px;
+	opacity: 0.7; /* прозрачность*/
+	text-decoration: none;
+	color: #000;
+}
+
+.silka li a:hover{
+	opacity: 1;
+}
+
+.silka li a:visited{
+	color: #4B0082;
+}
+
+.golova{
+	text-align: center;
+	 width: 100%;
+  padding: 35px;
+  margin: 5px 0 22px 0;
+  display: flex;
+  border: none;
+  margin: 0 auto;
+}
+
+.cont{
+	padding:5%;
+}
+
+.row{
+	padding: 5%;
+}
+
+.contacts-block{
+	list-style-type: none;
+}
+
+.contacts-block li a{
+	font-size:20px;
+	opacity: 0.7; /* прозрачность*/
+	text-decoration: none;
+	color: #000;
+}
+
+.contacts-block li a:hover{
+	opacity: 1;
+}
+
+.contacts-block li a:visited{
+	color: #4B0082;
+}
+
+.comment{
+	text-align: left;
+	width: 100%;
+}
+
+/*оформление о вход*/
+
+action_page.php {
+    border: 3px solid #f1f1f1;
+    align-items: center;
+  justify-content: center;
+    
+}
+
+/* Full-width inputs */
+input[type=text2], input[type=password2] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+
+
+	
